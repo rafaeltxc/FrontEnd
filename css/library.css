@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --darkBlue: #02021f;
+    --lightBlue: #93b3d8;
+    --shadow: #8D8080;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--darkBlue);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleHeader {
+    width: 100%;
+    height: 2vh;
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.titleHeader > img {
+    display: none;
+}
+
+.return {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 0 5px 5px var(--lightBlue);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px !important;
+}
+
+.return > img {
+    width: 45%;
+    height: 45%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 8vw !important;
+    font-weight: bold;
+}
+
+.inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 15vh;
+    justify-content: space-around;
+    padding: 15px 0px;
+    border: solid 2px var(--white);
+    border-radius: 30px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search > input {
+    border: solid 2px var(--white);
+    border-radius: 20px;
+    height: 32px;
+    width: 80%;
+    padding-left: 5px;
+}
+
+.search > input::placeholder {
+    color: var(--darkBlue);
+}
+
+.search > img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.newBook {
+    display: flex;
+    align-items: center;
+}
+
+.newBook:hover {
+    transition: .5s;
+}
+
+.newBook > img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.newBook > img:hover {
+    width: 37px;
+    height: 37px;
+    transition: .5s;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+.container > h2 {
+    color: var(--white);
+    margin: 20px 0;
+    font-size: 20px;
+
+}
+
+.book {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px;
+    width: 70vw;
+    height: 14vh;
+    padding: 20px;
+}
+
+.book:hover {
+    width: 71vw;
+    transition: .5s;
+    box-shadow: 0 5px var(--lightBlue);
+}
+
+.book:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+    transition: 0.5;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--darkBlue);
+}
+
+.text {
+    width: 80%;
+    color: var(--darkBlue);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-5%);
+    }
+  
+    50% {
+      transform: translateY(2%);
+    }
+  
+    100% {
+      transform: translateY(-5%);
+    }
+  }
+
+@media screen and (min-width: 600px){
+    .return {
+        top: 1vh;
+        right: .5vw;
+        padding: 10px;
+    }
+    
+    .return > img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 4vw !important;
+    }
+
+    .titleHeader {
+        flex-direction: row;
+    }
+
+    .titleHeader > img {
+        display: block;
+        height: 11vw;
+        animation: updown 2s ease infinite;
+        width: 9vw;
+    }
+
+    .inf {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .search > input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .newBook {
+        width: 20%;
+    }
+}

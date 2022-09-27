@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --darkBlue: #02021f;
+    --lightBlue: #93b3d8;
+    --shadow: #8D8080;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkBlue);
+}
+
+main {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.return {
+    position: absolute;
+    top: 1vh;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 0 5px 5px var(--lightBlue);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px !important;
+}
+
+.return > img {
+    width: 45%;
+    height: 45%;
+    margin-bottom: 15px;
+}
+
+.titleHeader {
+    width: 100%;
+    height: 2vh;
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.titleHeader > img {
+    height: 11vw;
+    animation: updown 2s ease infinite;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 8vw !important;
+    font-weight: bold;
+    text-shadow: 0 5px 5px var(--lightBlue);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    justify-content: space-around;
+    width: 70%;
+    height: 70%;
+    align-items: center;
+}
+
+form > fieldset > input, textarea {
+    border-radius: 20px;
+    padding: 10px 10px;
+    box-shadow: 0 5px 5px var(--lightBlue);
+}
+
+fieldset > label {
+    margin: 0 0  10px 5px;
+    text-shadow: 0 5px 5px var(--shadow);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.title > input {
+    height: 3vh;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 2vh;
+    width: 40%;
+    padding: 1vh;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px var(--lightBlue);
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0 5px 5px var(--shadow);
+}
+
+.btn:hover {
+    padding: 1.4vh;
+    transition: 0.5s;
+}
+
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+    transition: 0.5;
+}
+
+@media screen and (min-width: 600px){
+
+    .return {
+        top: 2vh;
+        left: 1vw;
+        padding: 10px;
+    }
+    
+    .return > img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-size: 4vw !important;
+        margin-bottom: 2vh;
+    }
+
+    fieldset > label {
+        margin: 5vh 0 10px 5px;
+    }
+
+    .title {
+        width: 40%;
+    }
+
+    .resume {
+        width: 40%;
+    }
+
+    .btn {
+        width: 20%;
+        margin-top: 5vh;
+    }
+    
+}

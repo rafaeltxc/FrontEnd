@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../resources/book.svg">
-    <link rel="stylesheet" href="../../reset.css">
+    <link rel="icon" href="../resources/rocket.svg">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/signUp.css">
     <title>Sign up</title>
 </head>
@@ -13,18 +13,18 @@
     <div class="background"></div>
     <main>
         <div class="signUp">
-            <form class="form">
+            <form class="form" id="form">
                 <fieldset>
-                    <label for="login">Insert your email</label>
-                    <input type="text" placeholder="email@email.com">
+                    <label for="login">Choose a nickname</label>
+                    <input type="text" id="nickname" placeholder="nickname" required>
                 </fieldset>
                 <fieldset>
                     <label for="login">Choose a password</label>
-                    <input type="password" placeholder="*****">
+                    <input type="password" id="pass1" placeholder="********" required>
                 </fieldset>
                 <fieldset>
                     <label for="login">Write your password again</label>
-                    <input type="password" placeholder="*****">
+                    <input type="password" id="pass2" placeholder="********" required>
                 </fieldset>
                 <div class="birth">
                     <select name="month" id="month">
@@ -137,8 +137,9 @@
             </form>
         </div>
         <div class="misc">
-            <img class="rocketImg" src="../resources/outer-space-animate.svg" alt="floating rocket">
+            <img class="rocketImg" src="../resources/rocket.svg" alt="floating rocket">
         </div>
     </main>
+    <script src="../javaScript/signUp.js"></script>
 </body>
 </html>

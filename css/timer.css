@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --background: #777777;
+    --shadow: #cfd3d0;
+}
+
+* {
+    font-family: 'Inter Tight', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    width: 70%;
+    height: 40%;
+    padding-top: 2%;
+    color: white;
+}
+
+.carousel {
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+}
+
+.counter > div {
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 20%;
+    height: 30%;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.numbers {
+    margin-top: 5%;
+    width: 60%;
+    display: inline-block;
+}
+
+.numbers > button {
+    font-size: small;
+    margin-top: 5%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px var(--shadow);
+    width: 30px;
+    height: 30px;
+}
+
+.numbers > button:active {
+    width: 28px;
+    height: 28px;
+}

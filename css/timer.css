@@ -39,25 +39,29 @@ main {
     height: 100%;
 }
 
-.carousel-item {
-    
-}
-
 .counter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.counter > div {
+#errorMessage {
+    color: black;
+    font-size: 15px;
+}
+
+.counterTimer > div > input {
+    background-color: transparent;
+    padding: 5px 5px;
     margin: 5px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid white;
     border-radius: 10px;
     width: 20%;
     height: 30%;
     box-shadow: 0 2px 5px var(--shadow);
+    text-align: center;
+    color: white;
+    transition: .5s;
 }
 
 .numbers {
@@ -82,4 +86,13 @@ main {
 .numbers > button:active {
     width: 28px;
     height: 28px;
+}
+
+.img-delete {
+    padding-right: 10px;
+    width: 25px;
+}
+
+.img-play {
+    width: 15px;
 }

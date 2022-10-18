@@ -24,6 +24,7 @@ main {
     border-radius: 20px;
     display: flex;
     width: 70%;
+    max-width: 400px;
     height: 50%;
     padding-top: 2%;
     color: white;
@@ -55,7 +56,6 @@ main {
     box-shadow: 0 2px 5px var(--shadow);
     text-align: center;
     color: white;
-    transition: .5s;
 }
 
 .numbers {
@@ -90,4 +90,152 @@ main {
 
 .img-play {
     width: 20px;
+}
+
+.counterStop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35vh;
+}
+
+.counterStop > div {
+    display: flex;
+    width: 70%;
+    height: 50%;
+}
+
+.counterStop > div > div {
+    background-color: transparent;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40%;
+    height: inherit;
+    box-shadow: 0 2px 5px var(--shadow);
+    text-align: center;
+    color: white;
+    transition: .5s;
+}
+
+.history {
+    width: 40% !important;
+    max-height: 150px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.history::-webkit-scrollbar {
+    width: 5px;
+}
+
+.history::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+}
+  
+.history::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.counterStop > div > button {
+    font-size: small;
+    margin-top: 5%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    border-radius: 25%;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.refresh {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: .5s;
+}
+
+.refresh-show {
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    transition: .3s;
+}
+
+.play-stopwatch {
+    visibility: visible;
+    width: 85px;
+    height: 85px;
+    transition: .5s;
+}
+
+.play-stopwatch-hide {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: .5s;
+}
+
+.clock {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: .5s;
+}
+
+.clock-show {
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    transition: .5s;
+}
+
+.buttons-stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-refresh {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+}
+
+.img-refresh-hide {
+    width: 0px;
+    height: 0px;
+    transition: .5s;
+}
+
+.img-play-stopwatch {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+}
+
+.img-play-stopwatch-hide {
+    width: 0px;
+    height: 0px;
+    transition: .5s;
+}
+
+.img-clock {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+}
+
+.img-clock-hide {
+    width: 0px;
+    height: 0px;
+    transition: .5s;
 }
